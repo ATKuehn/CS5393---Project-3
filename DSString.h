@@ -75,7 +75,7 @@ public:
      * at the end of the string in DSString so you can just return a pointer to data.
      **/
     const char *c_str() const;
-
+    void remove(size_t);
     // a conversion to std::string would also be nice to have: string string() const;
 
     /**
