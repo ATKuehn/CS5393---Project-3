@@ -90,6 +90,9 @@ public:
     // you may want to add a find(...) function that will search for a
     // substring within a string or a function that breaks a string into words.
     // You will need a split or tokenize function.
+    bool operator!=(const DSString&) const;
+    friend std::istream& getline(std::istream& in, DSString& str, char delim);
+    friend std::istream& getline(std::istream& in, DSString& str);
 };
 
 #endif
